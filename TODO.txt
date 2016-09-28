@@ -1,6 +1,4 @@
 TODO LIST:
-- Video player needs to be able to work on Chrome.
+- Video player needs to be able to work on Chrome. There is a bug in Chrome which prevents videos from streaming if they are rendered in an iframe. ZeroNet uses iframes in order to render pages.
 - Need an admin interface to be able to delete video topics and comments.
-- Need to be able to directly search videos contained inside the .db database from index.html
-- Videos need to be able to instantly start playing once the Play button is clicked.
-- Create an application that instantly downloads and seeds any magnet links that are added to your .db database. This is to prevent videos from becoming seedless, due to lazy people forgetting to seed their videos after uploading magnet links!
+- Create an application that instantly downloads and seeds any magnet links that are added to your .db database. Anyone can then become a KopyKate seedbox, provided they have fast internet and lots of hard-disk space. This is to prevent videos from becoming seedless, due to lazy people forgetting to seed their videos after uploading magnet links!
