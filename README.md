@@ -1,4 +1,4 @@
-# kopy-kate v1.1 BETA
+# kopy-kate v1.3 BETA
 
 ## Install instructions:
 
