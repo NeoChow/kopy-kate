@@ -16,4 +16,6 @@
 
 ## To-Do-List:
 
-### - 
+### - Create a means to stream videos on all browsers, perhaps by creating a universal external player?
+### - Create a more user friendly uploader; a. perhaps by prompting user to download webtorrent desktop after adding a video b. also refusing to allow videos to be added unless number of Peers are more than 0.
+### - Create an automatic webseed function. Video size must be less than e.g. 5mb. User can upload torrents and automatically get webseeded, but for a short period of time e.g. 24hrs.
