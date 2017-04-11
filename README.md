@@ -27,4 +27,4 @@
 ### - Only show a small number of videos at a time at any given moment. At the moment, it only does so when search results first come up, but does not continue to do so after 'Show More Videos' is clicked. This can overwhelm the browser with infinitesimal amounts of results!
 ### - Featured videos will only stick if they have been very recently added or commented on. Needs to be able to stick even if they're 100 years old and haven't been commented on. 
 ### - Clean up code and add more class names to CSS files.
-### - More YouTube-like menu functions and more polishing of overall site layout.
+### - More YouTube-like menu functions and more polishing of overall site layout for both PC and mobile.
