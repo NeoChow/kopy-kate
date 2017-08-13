@@ -9,7 +9,7 @@
 
 ## Credits to:
 
-### - Ferros, creator of WebTorrent, Instant.io and WebTorrent.Desktop
+### - Ferros Aboukhadijeh, creator of WebTorrent, Instant.io and WebTorrent.Desktop
 ### - Creators of ZeroTalk @ ZeroNet, which the core engine and site structure was based on.
 ### - Creators of ZeroNet for giving this project a platform to begin with.
 ### - Creator of ZeroTube for originally coming up with the idea.
