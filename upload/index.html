@@ -17,29 +17,112 @@
 
 <style>
 
-@media all and (max-width: 1100px) {
-            .icon-upload {
-                display: none !important;
-            }
-            .feed_icon {
-                display: none !important;
-            }
-            .top-menu {
-                display: none !important;
-            }
-        }
-        @media all and (max-width: 800px) {
-            .new-topic {
-	    	width: 100% !important;
-            }
-            .upload-container {
-	    	width: 100% !important;
-            }
-            .leftmenu {
-                width: 0% !important;
-                margin-right: 0px;
-                display: none !important;
-            }
+/* New CSS */
+
+#output video {
+  width: 768px;
+  height: 432px;
+}
+
+	body {
+		margin: 0px;
+		background: #EFEFEF;
+		font-size: 14px;
+	}
+	
+	.new_header {
+		width: 100%;
+		position: fixed;
+		height: 50px;
+		background: #FFFFFF;
+		border: solid;
+		border-width: 0px;
+		border-bottom-width: 1px;
+		border-bottom-color: #E5E5E5;
+		z-index: 20;
+	}
+	
+	.menu_top {
+		width: 100%;
+		position: fixed;
+		height: 40px;
+		background: #FFFFFF;
+		border: solid;
+		border-width: 0px;
+		border-bottom-width: 1px;
+		border-bottom-color: #E5E5E5;
+		margin-top: 51px;
+		margin-left: 201px;
+		z-index: 19;
+	}
+	
+	#menu_left {
+		display: block;
+		height: 100%;
+		position: fixed;
+		background: #FFFFFF;
+		margin-top: 51px;
+		border: solid;
+		border-width: 0px;
+		border-right-width: 1px;
+		border-right-color: #E5E5E5;
+		z-index: 20;
+	}
+	
+	.menu_left_table {
+		padding: 20px;
+	}
+	
+	.menu_left_table td {
+		border: solid;
+		border-width: 0px;
+		border-bottom-width: 1px;
+		border-bottom-color: #E5E5E5;
+	}
+	
+	.new_main {
+		position: absolute;
+		width: 100%;
+		min-height: calc(100% + 100px);
+	}
+	
+	.wrapper {
+		position: relative;
+		min-height: 100%;
+	}
+	
+	.footer {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: #FFFFFF;
+	}
+	
+	.footer_menu {
+		padding: 20px;
+	}
+	
+	.footer_menu td {
+		border: solid;
+		border-width: 0px;
+		border-bottom-width: 1px;
+		border-bottom-color: #E5E5E5;
+	}
+	
+   	.menu_left_list li {
+        	list-style-image: url('img/menu-ico3.jpg');
+		padding: 5px;
+		margin-left: -10px;
+  	}
+	.menu_left_table a:hover li {
+		color: white;
+		background-color: #424242;	
+	}
+
+/* Older CSS */	
+
+        @media all and (max-width: 1300px) {
             .feature_notice {
                 display: none !important;
             }
@@ -49,7 +132,46 @@
             .icon-upload {
                 display: none !important;
             }
-            .pc-logo {
+            .search-bar {
+                width: 300px !important;
+            }
+            .toggle-menu {
+                display: none !important;
+            }
+            #output video {
+                width: 768px;
+                height: 432px;
+            }
+            .player-output {
+                width: 768px;
+                height: 432px !important;
+            }
+            .center {
+                max-width: 768px !important;
+            }
+            .video-information {
+                height: 32px !important;
+            }
+	}
+		
+	@media all and (max-width: 1100px) {
+		.new_main {
+			margin-left: 0px; !important;
+			width: 100%; !important;
+		}
+		.menu_top {
+			margin-left: 0px; !important;
+		}
+		#menu_left {
+			display: none !important;
+		}
+            .feature_notice {
+                display: none !important;
+            }
+            .feed_icon {
+                display: none !important;
+            }
+            .icon-upload {
                 display: none !important;
             }
             .search-bar {
@@ -58,41 +180,59 @@
             .toggle-menu {
                 display: none !important;
             }
-            .mobile-logo {
-                display: block !important;
-            }
             .video_container {
-                margin-left: 0px !important;
-                width: 100% !important;
+                width: 90% !important;
             }
             #output video {
-                width: 480px;
-                height: 270px;
+                width: 512px;
+                height: 288px;
             }
             .player-output {
-                width: 480px;
-                height: 270px !important;
+                width: 512px;
+                height: 288px !important;
             }
             .center {
-                max-width: 480px !important;
+                max-width: 512px !important;
             }
             .video-information {
                 height: 32px !important;
             }
-            .screen-warning {
-                height: 48px !important;
-            }
-	    .icon-x {
-	    	margin-top: -7.5px;
+			.icon-x {
+				margin-top: 7.5px;
+			}
+		}
+		
+        @media all and (max-width: 950px) {
+	    .topics-list {
+		margin-left: 0px !important;		
 	    }
-        }
-        @media all and (max-width: 500px) {
-            .new-topic {
-	    	width: 100% !important;
+            .pc-logo {
+                display: none !important;
             }
-            .upload-container {
-	    	width: 100% !important;
+            .mobile-logo {
+                display: block !important;
             }
+	    .new_header {
+		background-color: #C70039 !important;
+		border-bottom-color: #ad0031 !important;
+	    }
+	    .video_container {
+                margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 67.5px !important;
+                width: 100% !important;
+            }
+	    .new_main {
+		margin-left: 0px; !important;
+		width: 100%; !important;
+	    }
+	    .menu_top {
+		display: none !important;
+		margin-left: 0px; !important;
+	    }
+	    #menu_left {
+		display: none !important;
+	    }
             .search-bar {
                 width: 175px !important;
             }
@@ -107,6 +247,8 @@
             }
             .center {
                 max-width: 320px !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
             }
             #output video {
                 width: 320px;
@@ -117,9 +259,9 @@
                 height: 180px !important;
             }
 	    .icon-x {
-	    	margin-top: -7.5px;
+	    	margin-top: 7.5px;
 	    }
-        }
+	}
 
 input[type="file"] {
     display: none;
@@ -153,32 +295,16 @@ input[type="file"] {
 <!-- EOF editbar -->
 
 <!-- Head with menu links -->
-<div class="topmenu">
+<div class="new_header">
 
-        <!-- LOGO -->
+<a href="#" onclick="showhide()">
+<img src="../img/menu.png" style="opacity: 0.4; height: 12.5px; float: left; margin-top: 19px; margin-left: 25px">
+</a>
 
-        <a href="../"><img class="pc-logo" src="../img/logo.png" style="float: left; width: 225px; height: 67px;">
-        </a>
-
-        <!-- LOGO (MOBILE) -->
-
-        <a href="../"><img class="mobile-logo" src="../img/mobile-kitty.jpg" style="display: none; float: left; height: 50px; margin-right: 5px; margin-top: 8px">
-        </a>
-
-<!-- Alternative menu -->
-<div class="top-menu" id="altmenu" style="float: left; margin-top: 24px; display: block">
-<a href="../">Home </a>&middot;
-Upload &middot;
-<a href="https://www.dropbox.com/" target="_blank">DropBox </a>&middot;
-<a href="https://webtorrent.io/desktop" target="_blank">WebTorrent.Desktop </a>&middot;
-<a href="https://zeronet.io/" target="_blank">ZeroNet </a>&middot;
-<a href="http://127.0.0.1:43110/1FUQPLXHimgCvYHH7v3bJXspJ7bMBUXcEb/" target="_blank">ZeroTube </a>&middot;
-<a href="https://github.com/kopy-kate/kopy-kate" target="_blank">Source code </a>&middot;
-<a href="https://webtorrent.io/faq" target="_blank">Does WebRTC Reveal IP? </a>&middot;
-<a href="bitcoin:1NAGrndGttCiNQNLSGfdDSxzqNgtG6EUG7?amount=0.00250000&label=KopyKate%20Donation%202&message=Thank%20you%21" target="_blank">Donate!</a>
-</div>
-
-  </div>
+<a href="../"><img class="mobile-logo" src="../img/Cat_mobile_new.png" style="display: none; height: 35px; float: left; margin-top: 10px; margin-left: 10px; margin-right: 10px"></img></a>
+<a href="../"><img class="pc-logo" src="../img/logo.png" style="height: 35px; float: left; margin-top: 7.5px; margin-left: 10px"></img></a>
+		
+		<div style="float: left; margin-top: 12.5px; margin-left: 15px; opacity: 0.5"><a href="../upload/"><img src="../img/upload-new.png" height="25px"></img></a></div>
 
 </div>
 
@@ -186,14 +312,16 @@ Upload &middot;
 
 <!-- EOF Head -->
 
+<div class="new_main" id="new_main">
+<div class="wrapper">
+
 <div class="message-big">Initial sync in progress...</div>
 
 <!-- Page: Main -->
-<div class="topics-list">
+<div class="video_container" style="margin-left: 100px; margin-top: 75px; max-width: 768px; width: 100%">
 
 <!-- New Topic -->
- <center>
- <div class="new-topic" style="width: 70%">
+ <div class="new-topic">
 
  <div id="topic-new" class="topic topic-new" style="display: none">
   <div class="title"><input type="text" id="topic_title" class="text" placeholder="Video title"></div>
@@ -215,15 +343,24 @@ Upload &middot;
  </div>
 
 </div>
-</center>
-
-<center>
 
 <div id="question-torrent" style="margin-bottom: 20px"><a href="#New+topic" class="topic-new-link nolink">Already have a magnet link? Add torrent now!</a></div>
 
-<div id="output" style="margin-left: auto; margin-right: auto"></div>
+<div id="output" style="text-align: center"></div>
 
-<div class="upload-container" style="background-color: #ffffff; margin-right: 10px; margin-bottom: 10px; width: 70%; margin-top: -4px">
+
+<div class="upload-container" style="background-color: #ffffff; margin-right: 10px; margin-bottom: 10px; margin-top: -4px">
+
+<div id="warning-message" class="screen-warning" style="background-color: #1c73ff; color: white; font-size: 12px">
+                <div style="height: 16px; padding: 8px 8px">
+                    <div style="float: left"><b>Need help uploading? Please watch tutorials in 'Help and Suggestions' below!</b>
+                    </div>
+                    <a href="#" onclick="showhideMessage()">
+                        <div class="icon-x" style="float: right; margin-right: 8px"></div>
+                    </a>
+                </div>
+            </div>
+
 <div style="margin: 10px; padding: 20px">
 <!-- Uploader app -->
 
@@ -232,7 +369,7 @@ Upload &middot;
         <div class="speed" style="max-width: 730px; font-size: 12px"></div>
         <div class="log" style="font-size: 14px; max-width: 640px"></div>
 
-        <div style="float: center">
+        <div style="text-align: center">
         <label for="uploader">
         <img src="../img/upload-file.png" style="opacity: 0.25"></img>
         </label>
@@ -244,14 +381,15 @@ Upload &middot;
 </div>
 </div>
 
-<div class="new-topic" style="background-color: #ffffff; margin-right: 10px; margin-bottom: 10px; width: 70%; margin-top: -4px">
+<div class="new-topic" style="background-color: #ffffff; margin-right: 10px; margin-bottom: 10px; margin-top: -4px">
 <div style="margin: 10px; padding: 20px">
 <p style="text-align: left"><b>Help and suggestions</b></p>
 <p style="text-align: left"><a href="../?Topic:23_17ffrcHNzbFoUe81PyMEagQdv2DGNRLFcE/">Torrent upload tutorial</a> &middot; <a href="../?Topic:25_17ffrcHNzbFoUe81PyMEagQdv2DGNRLFcE/">Webseed upload tutorial</a> &middot; Encoding tutorial - (coming soon!)</p>
 </div>
 </div>
 
-</center>
+</div>
+</div>
 
 <!-- Template: menu -->
 <div class="menu template">
@@ -265,6 +403,10 @@ Upload &middot;
 <script type="text/javascript" src="../js/all.js?=version=6.72"></script>
 
 <script>
+function showhideMessage() {
+    document.getElementById('warning-message').style.display = 'none';
+}
+
 $(".head .more a").each( function(i, elem) {
     $(elem).attr("href", Text.fixLink($(elem).attr("href")))
 });
