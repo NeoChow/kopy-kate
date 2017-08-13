@@ -14,15 +14,20 @@ var $downloadSpeed = document.querySelector('#downloadSpeed')
         e.preventDefault() // Prevent page refresh
 
         var torrentId = document.querySelector('form input[name=torrentId]').value
-
-        client.add(torrentId, onTorrent)
+	
+	if (navigator.userAgent.indexOf("Firefox") > 0) {
+        	client.add(torrentId, onTorrent)
+	} else {
+		document.getElementById("loadingspan").style.display = 'none'
+		document.getElementById("warningspan").style.display = 'block'
+	}
       })
 
 function onTorrent (torrent) {
   // Stream the file in the browser
   torrent.files[0].appendTo('#output')
   document.getElementById("loadingspan").style.display = 'none'
-
+  
   // Trigger statistics refresh
   torrent.on('done', onDone)
   setInterval(onProgress, 500)

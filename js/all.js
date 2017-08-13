@@ -7644,7 +7644,8 @@ jQuery.extend( jQuery.easing,
           magnetlink = '';
         } else {
           magnetlink = "<a id='magnetlink' href='" + magnet + "'><div style='float: left' class='icon-magnet'></div><div style='float: left; font-size:12px; margin-top: 7px; margin-left: 5px'><b>Download</b></div></a><br />";
-          $("#chromelink").html('<a href="https://instant.io/#' + magnet + '"><div class="icon-chrome" style="float: left"></div><div style="float: left; font-size:12px; margin-top: 7px; margin-left: 5px"><b>Alternate player</b></div></a>')
+          $("#chromelink").html('<a href="https://instant.io/#' + magnet + '"><div class="icon-chrome" style="float: left"></div><div style="float: left; font-size:12px; margin-top: 7px; margin-left: 5px"><b>Alternate player</b></div></a>');
+	  $("#warningspan").html('You are not using Firefox. Please use <a href="https://instant.io/#' + magnet + '">Alternate Player</a> to watch video!');
           $("#magnet").val(magnet);
           $("#submitmagnet").click();
           $(".magnetbar").html(magnetlink);
@@ -7652,6 +7653,11 @@ jQuery.extend( jQuery.easing,
           $("#output").show();
           $("#statsbar").show();
           $("#vidinfo").show();
+		  $("#menu_left").hide();
+		  $("#new_main").css('margin-left', '0px');
+		  $("#vid_container").css('margin-top', '60px');
+		  $("#menu_top").hide();
+		  $("#new_main").css('width', '100%');
         }
         $(".body", elem).html(Text.toMarked(body, {
           "sanitize": true
