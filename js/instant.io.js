@@ -229,7 +229,11 @@
 	    '<a href="' + torrent.torrentFileBlobURL + '" target="_blank" download="' + torrentFileName + '"><b>[Download .torrent]</b></a>'
 	  )
           
+	  // Make it easy for newbies!
           document.getElementById("topic-new").style.display = "block";
+	  document.getElementById("magnet-message").style.display = "block";
+	  document.getElementById("warning-message").style.display = "none";
+	  document.getElementById("kittify-message").style.display = "none";
           document.getElementById("question-torrent").style.display = "none";
           document.getElementById("torrent_magnet").value = torrent.magnetURI;
 
