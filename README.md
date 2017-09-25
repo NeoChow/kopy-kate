@@ -10,7 +10,7 @@
 
 ## Introduction:
 
-KopyKate is a ZeroNet site; it is an alternative to YouTube, but instead of hosting videos on webservers, it uses decentralized databases in order to store magnet links for videos, and then uses WebTorrent in order to stream them. Note that WebTorrent (WebRTC) and BitTorrent use two different protocols, and the videos can only be seeded by clients made specifically for WebTorrent (e.g. WebTorrent Desktop). Users also have the option to upload webseeds to a CORS-enabled webserver. This allows torrents to temporarily use a backup file from an HTTP server, until enough peers are available!
+KopyKate is a ZeroNet site; it is an alternative to YouTube, but instead of hosting videos on webservers, it uses decentralized databases in order to store magnet links for videos, and then uses WebTorrent in order to stream them. Note that WebTorrent (WebRTC) and BitTorrent use two different protocols, and the videos can only be seeded by clients made specifically for WebTorrent (e.g. WebTorrent Desktop). Even watching a video means you're simultaneously seeding, for as long as the tab open! Users also have the option to upload webseeds to a CORS-enabled webserver. This allows torrents to temporarily use a backup file from an HTTP server, until enough peers are available!
 
 ## Install instructions:
 
