@@ -8,9 +8,11 @@
 - Improved player CSS.
 - Added option to either upload instant webseed or upload torrent
 
-## Install instructions:
+## Introduction:
 
-KopyKate is a ZeroNet site, so it will only work on ZeroNet. It is an alternative to YouTube, but instead of hosting videos on webservers, it uses decentralized databases in order to store magnet links for videos, and then uses WebTorrent in order to stream them.
+KopyKate is a ZeroNet site; it is an alternative to YouTube, but instead of hosting videos on webservers, it uses decentralized databases in order to store magnet links for videos, and then uses WebTorrent in order to stream them. Note that WebTorrent (WebRTC) and BitTorrent use two different protocols, and the videos can only be seeded by clients made specifically for WebTorrent (e.g. WebTorrent Desktop). Users also have the option to upload webseeds to a CORS-enabled webserver. This allows torrents to temporarily use a backup file from an HTTP server, until enough peers are available!
+
+## Install instructions:
 
 1. KopyKate is now clonable. Simply turn on ZeroNet, go to ZeroHello main page, and then select 'Clone' from the options next to the site on the list.
 2. The cloned site is now 100% modifiable. Be sure to submit any pull requests to GitHub. Cheers!
