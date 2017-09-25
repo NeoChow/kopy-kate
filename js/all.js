@@ -7644,8 +7644,8 @@ jQuery.extend( jQuery.easing,
           magnetlink = '';
         } else {
           magnetlink = "<a id='magnetlink' href='" + magnet + "'><div style='float: left' class='icon-magnet'></div><div style='float: left; font-size:12px; margin-top: 7px; margin-left: 5px'><b>Download</b></div></a><br />";
-          $("#chromelink").html('<a href="https://instant.io/#' + magnet + '"><div class="icon-chrome" style="float: left"></div><div style="float: left; font-size:12px; margin-top: 7px; margin-left: 5px"><b>Alternate player</b></div></a>');
-	  $("#warningspan").html('You are not using Firefox. Please use <a href="https://instant.io/#' + magnet + '">Alternate Player</a> to watch video!');
+          $("#chromelink").html('<a href="https://www.kittyseedbox.tk/player/#' + magnet + '"><div class="icon-chrome" style="float: left"></div><div style="float: left; font-size:12px; margin-top: 7px; margin-left: 5px"><b>Alternate player</b></div></a>');
+	  $("#warningspan").html('Fetching <a href="https://www.kittyseedbox.tk/player/#' + magnet + '">compatible player</a> <span id="time">00:05</span> (<a href="#" id="clear-timer">cancel</a>)');
           $("#magnet").val(magnet);
           $("#submitmagnet").click();
           $(".magnetbar").html(magnetlink);

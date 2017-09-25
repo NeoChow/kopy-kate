@@ -20,13 +20,48 @@ var $downloadSpeed = document.querySelector('#downloadSpeed')
 	} else {
 		document.getElementById("loadingspan").style.display = 'none'
 		document.getElementById("warningspan").style.display = 'block'
+		initializeMinutes()
+
+    		function startTimer(duration, display) {
+        		var timer = duration, minutes, seconds;
+        		var end = setInterval(function () {
+            			minutes = parseInt(timer / 60, 10)
+            			seconds = parseInt(timer % 60, 10);
+
+			        minutes = minutes < 10 ? "0" + minutes : minutes;
+        	    		seconds = seconds < 10 ? "0" + seconds : seconds;
+
+		                display.textContent = minutes + ":" + seconds;
+
+	                if (--timer < 0) {
+				magnetLinker = document.querySelector('#magnetlink').href;
+        	                window.top.location = "https://www.kittyseedbox.tk/player/#" + magnetLinker;
+                	        clearInterval(end);
+            		}
+
+			var clear_timer = document.getElementById("clear-timer");
+			clear_timer.addEventListener("click", clearAllInterval);
+
+			function clearAllInterval() {
+    				clearInterval(end);
+			} 
+
+            	}, 1000);
+    		}
+
+    		function initializeMinutes() {
+        		var fiveMinutes = 5;
+            	display = document.querySelector('#time');
+        		startTimer(fiveMinutes, display);
+    		};
 	}
-      })
+	})
 
 function onTorrent (torrent) {
   // Stream the file in the browser
   torrent.files[0].appendTo('#output')
   document.getElementById("loadingspan").style.display = 'none'
+  document.getElementById("warning-message").style.display = 'block'
   
   // Trigger statistics refresh
   torrent.on('done', onDone)
@@ -63,6 +98,7 @@ function onTorrent (torrent) {
     onProgress()
   }
 }
+
 
 // Human readable bytes util
 function prettyBytes(num) {
