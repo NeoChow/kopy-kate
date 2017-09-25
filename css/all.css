@@ -125,8 +125,8 @@ pre code {
 	border: solid 1px #e1e4e5; padding: 10px; background-color: #FBFBFB; font-family: Consolas, Monaco, monospace; border-bottom: 2px solid #e1e4e5; line-height: 1em;
 }
 
-a { text-decoration: none; color: #DB3207 }
-a:hover { border-bottom: 0.1em solid #DDD }
+a { text-decoration: none; color: #004d99 }
+a:hover { border-bottom: 0.1em solid #0073e6 }
 a:active { border-bottom: 0.1em solid #333 }
 a.nolink { border-bottom: none }
 a.nolink:hover { border-bottom: none }
@@ -146,7 +146,7 @@ a.nolink:active { border-bottom: none }
 .userbullet { color: #AAA; }
 
 /*.center { margin-left: auto; margin-right: auto; max-width: 800px }*/
-.center { max-width: 1280px; width: 100%; }
+.center { max-width: 1024px; width: 100%; }
 
 
 /* Input */
@@ -221,10 +221,10 @@ input.text:focus, textarea:focus { border-color: #5FC0EA; outline: none; backgro
 .parent-link { font-size: 19px; font-weight: bold; line-height: 19px }
 .topic-new { overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden; -ms-backface-visibility: hidden; backface-visibility: hidden ; margin-bottom: 15px !important }
 .topic-new-link {
-	margin-right: 1px; color: #AAA; padding: 6px 10px; white-space: nowrap;
+	margin-right: 1px; color: #C70039; font-weight: bold; padding: 6px 10px; white-space: nowrap;
 	overflow: hidden; background-color: #ffffff; z-index: 1; transition: all 0.3s
 }
-.topic-new-link:hover { color: #DB3207; -webkit-transition: none ; -moz-transition: none ; -o-transition: none ; -ms-transition: none ; transition: none  }
+.topic-new-link:hover { color: #5b001a; -webkit-transition: none ; -moz-transition: none ; -o-transition: none ; -ms-transition: none ; transition: none  }
 
 .topic { background-color: white; padding: 15px 25px; margin: 1px; padding-left: 90px; position: relative; }
 .topic-group { border-left: 2px solid #004d99; margin-left: -2px; }
