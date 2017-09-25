@@ -4,6 +4,7 @@
 
 ## Change Log:
 
+###v1.3.24
 - Improved player CSS.
 - Added option to either upload instant webseed or upload torrent
 
